@@ -13,6 +13,7 @@
 }
 
 .calculator{
+    user-select: none;
     height: 80vh;
     width: 30vw;
     text-align: center;
@@ -23,6 +24,17 @@
     max-height: 332px;
     min-width: calc((10px * 4)*2 + 2rem*4);
     min-height: calc((10px * 4)*2 + 2rem*(4+1));
+    box-shadow: 0 4px #999;
+}
+
+.calculator-draggable{
+    cursor: grab;
+    position: absolute;
+    z-index: 1;
+}
+
+.calculator-draggable:active{
+    cursor: grabbing;
 }
 
 .calculator button {
@@ -62,7 +74,7 @@
 }
 
 .badass-heading {
-    position: relative;
+    position: absolute;
     font-family: 'Baloo Chettan 2', cursive;
     font-weight: 800;
     font-size: 5vh;
@@ -72,11 +84,11 @@
 }
 
 .badass-heading-epic {
-    right: 4vw;
+    left: 4vw;
 }
 
 .badass-heading-calculator{
-    left: 4vw;
+    right: 4vw;
 }
 
 .copyright{
