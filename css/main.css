@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: conent-box;
+}
+
+.container{
+    background-color: #0f4c81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.calculator{
+    height: 80vh;
+    width: 30vw;
+    text-align: center;
+    border-spacing: 20px;
+    border-radius: 35px;
+    background-color: #1b262c;
+    min-width: calc((20px * 4)*2 + 2rem*4);
+    min-height: calc((20px * 4)*2 + 2rem*(4+1));
+}
+
+.calculator button {
+    background-color: #696969;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: inline-block;
+    height: 3vw;
+    width: 3vw;
+    font-size: 2rem;
+    min-height: 2rem;
+    min-width: 2rem;
+}
+
+.result-box {
+    background-color: #696969;
+    color: white;
+    width: calc(100% - 40px);
+    font-size: 2rem;
+}
+
+.badass-heading {
+    width: 2rem;
+    position: relative;
+    font-family: 'Baloo Chettan 2', cursive;
+    font-weight: 800;
+    font-size: 5vh;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: #ed6663;
+}
+
+.badass-heading-epic {
+    right: 10vw;
+}
+
+.badass-heading-calculator{
+    left: 10vw;
+}
+
+.copyright{
+    height: 10vh;
+    background-color: #ffa372;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
