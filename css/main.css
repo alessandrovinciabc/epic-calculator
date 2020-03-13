@@ -1,4 +1,4 @@
-*{
+*, *::before, *::after{
     margin: 0;
     padding: 0;
     box-sizing: conent-box;
@@ -29,13 +29,24 @@
     background-color: #696969;
     color: white;
     border: none;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px #999;
     display: inline-block;
+    cursor: pointer;
     height: 3vh;
     width: 3vh;
     font-size: 2rem;
     min-height: 2rem;
     min-width: 2rem;
+    outline: none;
+}
+
+.calculator button:hover {
+    background-color: #494949;
+}
+
+.calculator button:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
 }
 
 .result-box {
