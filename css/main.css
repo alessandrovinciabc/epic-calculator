@@ -94,7 +94,10 @@
 .copyright{
     height: 10vh;
     background-color: #ffa372;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
+    color: #ed6663;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Baloo Chettan 2', cursive;
 }
